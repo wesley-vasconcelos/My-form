@@ -1,0 +1,25 @@
+{
+  "name": "my-form",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.79.4",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "sass": "^1.79.4",
+    "vee-validate": "^4.13.2",
+    "vue-the-mask": "^0.11.1",
+    "vue-toastification": "^2.0.0-rc.5",
+    "yup": "^1.4.0"
+  }
+}

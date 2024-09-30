@@ -1,0 +1,19 @@
+$color-default: #333;
+$color-secondary: #f39c12;
+$color-danger: #e74c3c;
+$color-white: #ffff;
+$color-softWhite: #fafafa;
+$color-background: #f9f9f9;
+$color-gray: #ccc;
+$color-ambar: #e69e21;
+
+:root {
+  --color-default: #{$color-default};
+  --color-secondary: #{$color-secondary};
+  --color-danger: #{$color-danger};
+  --color-white: #{$color-white};
+  --color-softWhite: #{$color-softWhite};
+  --color-background: #{$color-background};
+  --color-gray: #{$color-gray};
+  --color-ambar: #{$color-ambar};
+}

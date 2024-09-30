@@ -1,0 +1,118 @@
+body {
+  @include flex-center();
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-default);
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: var(--color-default);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin: 5px 0 5px;
+  white-space: nowrap;
+}
+
+input {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 5px;
+  margin: 0 0 2px;
+  outline: none;
+}
+
+input:hover {
+  border-color: var(--color-secondary);
+}
+
+.radio-input {
+  transform: scale(0.8);
+  margin-right: 6px;
+  color: var(--color-secondary);
+
+  &_left {
+    margin-left: 20px;
+  }
+}
+
+.button {
+  @include button-default();
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: none;
+}
+
+.button-secondary {
+  @include button-default();
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px var(--color-default);
+  background-color: var(--color-white);
+  overflow-y: auto;
+  max-height: calc(100vh - 80px);
+}
+
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+}
+
+.step {
+  flex: 1;
+  padding: 60px;
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+  background-color: var(--color-softWhite);
+
+  &_description {
+    font-size: 12px;
+  }
+
+  &_current {
+    color: var(--color-ambar);
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 40px 0 20px 0;
+}
+
+.error {
+  color: var(--color-danger);
+  position: absolute;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
